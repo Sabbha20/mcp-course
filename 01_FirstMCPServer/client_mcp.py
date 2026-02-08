@@ -15,7 +15,7 @@ async def main():
             print("After Initialize: Session ID =", sid)
             
             result = await session.call_tool("add", {"a": 5, "b": 7})
-            print("Result of add(5, 7):", result)
+            print("Result:", result)
             
 if __name__ == "__main__":
     asyncio.run(main())
